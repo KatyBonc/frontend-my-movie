@@ -14,7 +14,7 @@ function Home() {
   const [moviesData, setMoviesDisplay] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/movies')
+    fetch('https://backend-mymovie-nu.vercel.app/movies')
     .then(response => response.json())
     .then(data => {
       const formattedMovies = data.movies.map(movie =>({
